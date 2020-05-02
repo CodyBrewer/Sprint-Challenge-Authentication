@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [*] Create a forked copy of this project.
+- [*] Add your _Team Lead_ as collaborator on Github.
+- [*] Clone your forked version of the Repository.
+- [*] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [*] Implement the project on this Branch, committing changes regularly.
+- [*] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -38,13 +38,23 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is the purpose of using _sessions_?
+- [*] What is the purpose of using _sessions_?
 
-- [ ] What does bcrypt do to help us store passwords in a secure manner.
+    The purpose of session is to tstore suer data against a unique session ID and used for persisting and accessing data across request without having to re-enter your credentials.      
 
-- [ ] What does bcrypt do to slow down attackers?
+- [*] What does bcrypt do to help us store passwords in a secure manner.
 
-- [ ] What are the three parts of the JSON Web Token?
+    Bcrypt provides hashing functions which turn the passwords into a cryuptographic string that is stored locally in the database and can be berified in the server. This allows us to store passwords without them being in plain text and ensuring they are hashed.
+
+- [*] What does bcrypt do to slow down attackers?
+
+    Bcrypt can repeatedly hash private information making it harder for attrackers to gain access to cliet data.
+
+- [*] What are the three parts of the JSON Web Token?
+
+    1. Payload
+    2. Options
+    3. Signature
 
 ## Minimum Viable Product
 
